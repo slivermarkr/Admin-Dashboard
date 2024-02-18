@@ -64,7 +64,6 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 1fr;
 }
 
 .cards :nth-child(odd) {
@@ -87,3 +86,28 @@
     background-color: #25ffff;
 }
 
+.nav ul > li {
+    display: flex;
+    align-content: center;
+}
+.nav ul > li  p {
+    align-self: center ;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+.small-icon-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.small-icon-box div:nth-child(1) {
+    justify-self: end;
+}
+
+.nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+}
