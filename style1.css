@@ -6,7 +6,7 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
 }
 .main {
     grid-column: 2 / 3;
@@ -45,3 +45,32 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
+/* main content wrapper */
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.content-wrapper .main-card-container {
+    background-color: #e6f1e1;
+}
+
+.content-wrapper .side-card-container {
+    background-color: #121a42;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cards :nth-child(odd) {
+    background-color: white;
+}
+
+.cards :nth-child(even) {
+    background-color: rgb(158, 155, 155);
+}
+
