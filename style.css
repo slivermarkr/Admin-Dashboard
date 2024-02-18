@@ -46,3 +46,23 @@ ul{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-content .projects{
+    grid-row: 1 / 3;
+    background-color: rgb(250, 212, 250);
+}
+
+.main-content .announcements{
+    grid-row: 1 / 2;
+    background-color: rgb(80, 56, 56);
+}
+
+.main-content .trending {
+    background-color: #cbebc3;
+}
