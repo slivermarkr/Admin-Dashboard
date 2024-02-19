@@ -3,7 +3,11 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    --icon-size: 20px;
+    --bc: #fb923c;
+    --nav-btns-fc: white;
+}
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -11,12 +15,13 @@
 
 .main {
     grid-column: 2 / 3;
-    background-color: #c7cdff;
+    background-color: #fb923c;
 }
 .side-bar {
     grid-column: 1 / 2;
     grid-row: 1;
-    background-color: #ffc7c7;
+    background: linear-gradient(45deg, purple, var(--bc) );
+
 }
 .side-bar li > div {
     width: 20px;
@@ -92,9 +97,11 @@
 .nav ul > li {
     display: flex;
     align-content: center;
+
 }
-.nav ul > li  p {
+.nav ul  li > p {
     align-self: center ;
+    color: var(--nav-btns-fc);
 }
 
 .search-box {
@@ -121,8 +128,18 @@
     gap: 20px;
 }
 
-.nav {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+.nav > :nth-child(1) {
+    margin-bottom: 40px;
+}
+
+
+.trending-box :nth-child(even){
+    background-color: #e11d48;
+}
+.trending-box :nth-child(odd){
+    background-color: #84cc16;
+}
+.trending-grid {
+    width: 20px;
+    height: 20px;
 }
