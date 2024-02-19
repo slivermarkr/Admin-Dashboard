@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 6fr;
 }
+
 .main {
     grid-column: 2 / 3;
     background-color: #c7cdff;
@@ -71,7 +72,7 @@
 }
 
 .cards :nth-child(even) {
-    background-color: rgb(158, 155, 155);
+    background-color: #7dd3fc;
 }
 
 .side-card-container {
@@ -79,11 +80,13 @@
     grid-template-rows: 1fr 1fr;
 }
 
-.side-card-container :nth-child(1) {
+.anno-grid{
     background-color: #8fd2fb;
+    border: solid black 1px;
 }
-.side-card-container :nth-child(2) {
+.trend-grid {
     background-color: #25ffff;
+    border: solid black 1px;
 }
 
 .nav ul > li {
@@ -109,5 +112,17 @@
 .nav-buttons {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+}
+
+.side-bar {
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+    gap: 20px;
+}
+
+.nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
