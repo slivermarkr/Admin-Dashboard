@@ -47,6 +47,10 @@
     grid-template-columns: 1fr 10fr;
     justify-content: center;
     align-content: center;
+    gap: .5rem;
+}
+.user-greet {
+    align-self: center;
 }
 
 .header-wrapper {
@@ -75,11 +79,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
+    margin-top: .5rem;
 }
 .side-card-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-
 }
 .nav ul > li {
     display: flex;
@@ -166,7 +170,7 @@ img {
 .card-icons {
     display: flex;
     justify-content: end;
-    gap: 10px;
+    gap: 35px;
     align-items: center;
 }
 .card {
@@ -175,7 +179,10 @@ img {
     border-radius: 6px 9px 9px 6px;
     background-color: white;
 
-    box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.4)
+    box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.4);
+    height: 175px;
+    padding: 1.5rem;
+    align-content: space-between;
 }
 
 button {
@@ -202,5 +209,13 @@ input[type="search"]{
     padding: 1em;
     border-radius: 6px;
     background-color: white;
-    box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.4)
+    box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.4);
+    margin-top: .5rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
 }
