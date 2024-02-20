@@ -28,7 +28,10 @@
     width: 20px;
     height: 20px;
 }
-
+.card-icons > div {
+    width: 20px;
+    height: 20px;
+}
 .main {
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -78,13 +81,6 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.cards :nth-child(odd) {
-    background-color: white;
-}
-
-.cards :nth-child(even) {
-    background-color: #7dd3fc;
-}
 
 .side-card-container {
     display: grid;
@@ -131,6 +127,7 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap: 20px;
+    align-content: center;
 }
 
 .side-bar {
@@ -171,4 +168,17 @@ img {
 .trending-grid{
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+
+.anno-box {
+    display: grid;
+    gap: .5em;
+    background-color: grey;
+    border-radius: 5px;
+}
+.card-icons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
 }
