@@ -5,7 +5,10 @@
 }
 :root {
     --img-size: 2.5rem;
-    --bc: #fb923c;
+    --big-img:3.5rem;
+    --bc-theme: #fb923c;
+    --bc-btn: #f97316;
+    --bc:#e2e8f0;
     --nav-btns-fc: white;
 }
 
@@ -16,12 +19,11 @@
 
 .main {
     grid-column: 2 / 3;
-    background-color: #fb923c;
 }
 .side-bar {
     grid-column: 1 / 2;
     grid-row: 1;
-    background: linear-gradient(45deg, purple, var(--bc) );
+    background: linear-gradient(45deg, var(--bc-theme), #c2410c );
     padding-left: .5em;
 }
 .side-bar li > div {
@@ -38,27 +40,20 @@
 }
 
 .main .header-wrapper {
-    background-color: #ccffd2;
-}
-
-.main .small-icon-box {
-    background-color: #f7ffc1;
+    background-color: white;
 }
 .main .big-icon-box {
-    background-color: #ffbfe9;
     display: grid;
     grid-template-columns: 1fr 10fr;
     justify-content: center;
     align-content: center;
 }
 
-.main .nav-buttons {
-    background-color: #bcf5ff;
-}
-
 .header-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: .5rem 1rem;
+    gap: 1rem;
 }
 
 /* main content wrapper */
@@ -66,39 +61,26 @@
 .content-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: var(--bc);
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .content-wrapper .main-card-container {
-    background-color: #e6f1e1;
+    background-color: var(--bc);
     display: grid;
     grid-template-rows: max-content;
 }
-
-.content-wrapper .side-card-container {
-    background-color: #121a42;
-}
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
 }
-
-
 .side-card-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-}
 
-.anno-grid{
-    background-color: #8fd2fb;
-    border: solid black 1px;
 }
-.trend-grid {
-    background-color: #25ffff;
-    border: solid black 1px;
-}
-
 .nav ul > li {
     display: flex;
     align-content: center;
@@ -171,12 +153,11 @@ img {
 .trending-grid{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    background-color: white;
 }
 
 .anno-box {
     display: grid;
-    gap: .5em;
-    background-color: grey;
     border-radius: 5px;
 }
 .card-icons {
@@ -186,7 +167,25 @@ img {
     align-items: center;
 }
 .card {
+    display: grid;
     border-left: 5px solid  rgb(255, 230, 105);
     border-radius: 3px;
+    background-color: white;
 }
 
+button {
+    background-color: var(--bc-btn);
+    border: none;
+    border-radius: 6px;
+}
+
+input[type="search"]{
+    background-color: var(--bc);
+}
+.anno-box > div {
+    background-color: white;
+}
+.big-icon-box img {
+    width: var(--big-img);
+    height: var(--big-img);
+}
