@@ -14,7 +14,7 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .main {
@@ -100,7 +100,10 @@
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: start;
-
+    gap: 1rem;
+}
+.search-box div:nth-child(1) {
+    display: flex;
 }
 .small-icon-box {
     display: grid;
@@ -196,6 +199,24 @@ button {
 
 input[type="search"]{
     background-color: var(--bc);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    width: 30rem;
+    height: 23px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+/* removing the x mark in search input box */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input[type="search"]:focus{
+    outline: none;
 }
 .anno-box > div {
     background-color: white;
