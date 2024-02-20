@@ -70,6 +70,8 @@
 
 .content-wrapper .main-card-container {
     background-color: #e6f1e1;
+    display: grid;
+    grid-template-rows: max-content;
 }
 
 .content-wrapper .side-card-container {
@@ -187,3 +189,4 @@ img {
     border-left: 5px solid  rgb(255, 230, 105);
     border-radius: 3px;
 }
+
