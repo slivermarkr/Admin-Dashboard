@@ -168,8 +168,8 @@ img {
 }
 .card {
     display: grid;
-    border-left: 5px solid  rgb(255, 230, 105);
-    border-radius: 3px;
+    border-left: 6px solid  rgb(173, 105, 255);
+    border-radius: 6px 9px 9px 6px;
     background-color: white;
 }
 
