@@ -44,7 +44,7 @@
 }
 .main {
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: .5fr 5fr;
 }
 
 .main .header-wrapper {
