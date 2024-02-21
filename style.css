@@ -16,6 +16,8 @@
     --bc-btn: #f97316;
     --bc:#e2e8f0;
     --nav-btns-fc: white;
+
+    --anno-font-size: 13px
 }
 
 .wrapper {
@@ -240,8 +242,12 @@ input[type="search"]:focus{
     background-color: white;
     box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.4);
     margin-top: .5rem;
+    gap: 1rem;
 }
-
+.anno-box p {
+    font-size: var(--anno-font-size);
+    opacity: .5;
+}
 a {
     text-decoration: none;
 }
