@@ -30,7 +30,6 @@
     grid-column: 1 / 2;
     grid-row: 1;
     background: var(--bc-theme);
-    padding-left: .5em;
 }
 .side-bar li > div {
     width: 24px;
@@ -90,7 +89,14 @@
     display: flex;
     align-content: center;
     gap: 1rem;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 900;
+    padding-left: .5rem;
+}
+
+.nav ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 .nav ul  li > p {
     align-self: center ;
@@ -206,7 +212,6 @@ input[type="search"]{
     -webkit-appearance: none;
     -moz-appearance: none;
     
-    width: 35rem;
     height: 23px;
     border: none;
     border-radius: 10px;
