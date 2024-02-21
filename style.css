@@ -4,6 +4,7 @@
     padding: 0;
 
     font-family: "roboto";
+    letter-spacing: .5px;
 }
 @font-face {
     font-family: "roboto";
@@ -86,6 +87,7 @@
 .side-card-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 1rem;
 }
 .nav ul > li {
     display: flex;
@@ -152,6 +154,8 @@
     justify-items: start;
     gap: .5rem;
 
+    padding-right: 1rem;
+    padding-left: .5rem;
     font-size: 1.4em;
     color: white;
     font-weight: bold;
@@ -172,6 +176,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: white;
+    gap: 1rem;
 }
 .trend-grid {
     align-self: start;
@@ -206,6 +211,7 @@ button {
     width: 5rem;
     padding: .5rem;
     color: white;
+    font-weight: bold;
 }
 
 input[type="search"]{
@@ -213,7 +219,6 @@ input[type="search"]{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
     height: 23px;
     border: none;
     border-radius: 10px;
@@ -237,7 +242,7 @@ input[type="search"]:focus{
 }
 .anno-box,
 .trending-box {
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 6px;
     background-color: white;
     box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.4);
@@ -247,10 +252,31 @@ input[type="search"]:focus{
 .anno-box p {
     font-size: var(--anno-font-size);
     opacity: .5;
+    font-weight: 400;
 }
 a {
     text-decoration: none;
 }
 a:hover {
     cursor: pointer;
+}
+.anno-grid div{
+    font-weight: bold;
+}
+.anon-title {
+    font-size: 14px;
+}
+.bold {
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.bolder {
+    font-weight: bolder;
+}
+.user-greet p {
+    font-size: 12px;
+}
+.opaque {
+    opacity: .5;
+    font-size: var(--anno-font-size);
 }
