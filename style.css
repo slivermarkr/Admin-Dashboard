@@ -96,13 +96,14 @@
     font-size: 16px;
     font-weight: 900;
     padding-left: .5rem;
-    transition: all 1ms;
+    transition: all 2ms ease-in-out;
 }
 
 .nav ul > li:hover {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    scale: 1.1;
+    padding-top: .3rem ;
+    padding-bottom: .3rem;
 }
 .nav ul  li > p {
     align-self: center ;
@@ -121,7 +122,7 @@
 }
 .small-icon-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr .8fr 2fr;
     justify-content: center;
     align-items: center;
 }
@@ -231,6 +232,7 @@ input[type="search"]{
     border: none;
     border-radius: 10px;
     padding-left: 1rem;
+    width: 250px;
 }
 /* removing the x mark in search input box */
 input[type="search"]::-webkit-search-decoration,
@@ -323,5 +325,5 @@ a:hover {
     opacity: .7;
 }
 .small-icon-box div:nth-child(1):hover {
-    rotate: 30deg;
+    rotate: 20deg;
 }
