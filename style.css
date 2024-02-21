@@ -76,14 +76,9 @@
     gap: 1rem;
 }
 
-.content-wrapper .main-card-container {
-    background-color: var(--bc);
-    display: grid;
-    grid-template-rows: max-content;
-}
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 1em;
     margin-top: .5rem;
 }
